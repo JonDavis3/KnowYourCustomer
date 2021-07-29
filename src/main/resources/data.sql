@@ -1,6 +1,7 @@
 CREATE TABLE account (
   accountId INT AUTO_INCREMENT  PRIMARY KEY,
-  accountNumber INT(8) NOT NULL UNIQUE
+  accountNumber INT(8) NOT NULL,
+  CONSTRAINT ACCT_NUMBER_UNIQUE UNIQUE (accountNumber)
 );
 
 CREATE TABLE customer (

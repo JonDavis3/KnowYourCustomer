@@ -23,7 +23,7 @@ public class Account {
 	@Column(name="accountid")
 	private int accountId;
 	
-	@Column(name="accountnumber")
+	@Column(name="accountnumber", unique=true)
 	private int accountNumber;
 	
 	@ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
